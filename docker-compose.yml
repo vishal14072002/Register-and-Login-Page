@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  dockode:
+    build: .
+    ports:
+      - "5001:8080"
+  mongodb: 
+    image: mongo
+    ports:
+      - "27017:27017"
